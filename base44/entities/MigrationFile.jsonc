@@ -1,0 +1,34 @@
+{
+  "name": "MigrationFile",
+  "type": "object",
+  "properties": {
+    "filename": {
+      "type": "string"
+    },
+    "file_type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "validating",
+        "success",
+        "error"
+      ],
+      "default": "pending"
+    },
+    "validation_message": {
+      "type": "string"
+    },
+    "record_count": {
+      "type": "number"
+    },
+    "error_line": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "filename"
+  ]
+}

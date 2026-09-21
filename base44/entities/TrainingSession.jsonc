@@ -1,0 +1,39 @@
+{
+  "name": "TrainingSession",
+  "type": "object",
+  "properties": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_es": {
+      "type": "string"
+    },
+    "description_en": {
+      "type": "string"
+    },
+    "description_es": {
+      "type": "string"
+    },
+    "resource_type": {
+      "type": "string",
+      "enum": [
+        "video",
+        "doc",
+        "pdf"
+      ]
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "url": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title_en",
+    "resource_type"
+  ]
+}

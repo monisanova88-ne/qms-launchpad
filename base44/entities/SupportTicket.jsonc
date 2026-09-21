@@ -1,0 +1,23 @@
+{
+  "name": "SupportTicket",
+  "type": "object",
+  "properties": {
+    "question": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "investigating",
+        "resolved"
+      ],
+      "default": "investigating"
+    },
+    "response": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "question"
+  ]
+}

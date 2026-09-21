@@ -1,0 +1,25 @@
+{
+  "name": "OnboardingTask",
+  "type": "object",
+  "properties": {
+    "title_en": {
+      "type": "string"
+    },
+    "title_es": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title_en"
+  ]
+}

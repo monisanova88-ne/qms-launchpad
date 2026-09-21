@@ -1,0 +1,35 @@
+{
+  "name": "Booking",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "scheduled_date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "confirmed"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "client_name",
+    "topic",
+    "scheduled_date"
+  ]
+}
